@@ -11,10 +11,19 @@ export const ButtonStyle = ({
   onClick,
 }) => {
   const buttonClasses = `bg-opacity-75 text-white font-bold rounded-full h-[90px] w-[90px] 
-  ${isDoubleWidth ? "col-span-2 w-[189px] flex items-center px-8" : ""} 
+  ${
+    isDoubleWidth
+      ? "col-span-2 w-auto max-w-[189px] flex items-center px-8"
+      : ""
+  } 
   ${isTripleWidth ? "col-start-3" : ""} 
-  ${isSpecial ? "bg-[rgb(165,165,165)]" : "bg-[rgb(51,51,51)]"} 
-  ${isSymbol ? "bg-[rgb(255,170,55)]" : "bg-[rgb(51,51,51)]"} 
+  ${
+    isSpecial
+      ? "bg-[rgb(165,165,165)]"
+      : isSymbol
+      ? "bg-[rgb(255,170,55)]"
+      : "bg-[rgb(51,51,51)]"
+  } 
   ${isPlusMinus ? "text-[32px]" : "text-[40px]"}
   `;
 

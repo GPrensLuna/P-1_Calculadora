@@ -6,7 +6,7 @@ export const Keyboard = () => {
 
   const btnNumber = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, "."];
   const btnSpecials = ["AC", "+/-", "%"];
-  const btnSymbol = ["/", "X", "-", "+", "="];
+  const btnOperations = ["/", "X", "-", "+", "="];
 
   const handleButtonClick = (buttonValue) => {
     setResult((prevResult) => {
@@ -48,6 +48,7 @@ export const Keyboard = () => {
                 {btnNumber.map((number) => (
                   <ButtonStyle
                     key={number}
+                    className="bg-[rgb(51,51,51)]"
                     number={number}
                     isDoubleWidth={number === 0}
                     isTripleWidth={number === "."}
@@ -59,8 +60,9 @@ export const Keyboard = () => {
 
             <div className="col-start-2 justify-center items-center">
               <div className="flex flex-col gap-2 ">
-                {btnSymbol.map((symbol) => (
+                {btnOperations.map((symbol) => (
                   <ButtonStyle
+                    style={{ background: "rgb(51,51,51)" }}
                     key={symbol}
                     number={symbol}
                     isDoubleWidth={symbol === 0}
