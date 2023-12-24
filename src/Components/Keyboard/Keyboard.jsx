@@ -4,7 +4,7 @@ import { ButtonStyle } from "./ButtonStyle/ButtonStyle.jsx";
 export const Keyboard = () => {
   const [result, setResult] = useState("0");
 
-  const btnNumber = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, "."];
+  const btnNumber = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, ","];
   const btnSpecials = ["AC", "+/-", "%"];
   const btnOperations = ["/", "X", "-", "+", "="];
 
