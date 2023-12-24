@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: 'San Francisco', sans-serif; 
+  background: rgba(2, 2, 2, 0.452);
+}
+
